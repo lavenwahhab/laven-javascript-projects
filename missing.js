@@ -7,7 +7,7 @@
 
      for(let i = minNum ; i < maxNum; i++)
      {
-         if(arr.indexOf(i) < 0){
+         if(arr.indexOf(i) < 0){ //indexOf return its possition,in this case return -1 when value not exsit so the condition will be true.
              newArray.push(i);
          }
     
