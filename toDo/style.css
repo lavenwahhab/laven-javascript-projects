@@ -1,17 +1,18 @@
 *{
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
-   box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
 }
-.container {
+
+.container{ 
     width: 100%;
     min-height: 100vh;
-    background: palevioletred;
+    background: lightcoral;
     padding: 10px;
 }
-.todo-app {
+
+.todo-app{
     width: 100%;
     max-width: 540px;
     background: #fff;
@@ -19,13 +20,18 @@
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
-.todo-app h2 {
-    color: #002;
+.todo-app h2{
+    color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.row {
+.todo-app h2 img{
+    width: 70px;
+    margin-left: 10px;
+
+}
+.row{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +39,7 @@
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+
 }
 input{
     flex: 1;
@@ -54,7 +61,7 @@ button{
 }
 ul li{
     list-style: none;
-    font-size: 25px;
+    font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
@@ -66,19 +73,20 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(imgages/unchecked.png); 
+    background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
     left: 8px;
 }
-ul li .checked{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
- ul li.checked::before{
-    background-image: url(imgages/checked.png);
-} 
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
 ul li span{
     position: absolute;
     right: 0;
@@ -91,6 +99,7 @@ ul li span{
     text-align: center;
     border-radius: 50%;
 }
+
 ul li span:hover{
     background: #edeef0;
 }
